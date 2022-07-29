@@ -42,11 +42,11 @@ public class Stack {
 	}
 	
 	public boolean isFull() {
-		return top == capacity - 1; // top==count;
+		return top == capacity - 1; // capacity==count;
 	}
 	
 	public boolean isEmpty() {
-		return top == -1;
+		return top == -1; // count == 0;
 	}
 	
 	public static void main(String[] args) {

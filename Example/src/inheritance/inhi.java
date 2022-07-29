@@ -14,7 +14,7 @@ public class inhi {
 		p.p1();
 		p.p();
 		Parent n = new ChildOver();
-		n.p1();
+		n.p1(); // because we override
 	}
 	
 }

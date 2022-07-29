@@ -28,6 +28,20 @@ public class Linked {
 		}
 	}
 	
+	public void reverseLinkedList() {
+		LinkedNode node = this.head;
+		LinkedNode prev = null;
+		LinkedNode next = null;
+		LinkedNode current = node;
+		while(current!=null) {
+			next = current.node;
+			current.node = prev;
+			prev = current;
+			current = next;
+		}
+		this.head = prev;
+	}
+	
 	private LinkedNode searchData(int data) {
 		return searchData(head,data);
 	}

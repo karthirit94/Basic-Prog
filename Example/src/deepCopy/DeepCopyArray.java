@@ -7,7 +7,6 @@ public class DeepCopyArray {
 	public static void main(String[] args) {
 		int[][] a = new int[1][];
 		a[0] = new int[] {43};
-		
 		// deep copy
 		Arrays.stream(a).map(int[]::clone).toArray(int[][]::new);
 		Arrays.stream(a).map(arr -> arr.clone()).toArray(s -> a.clone());
